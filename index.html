@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Happy Holi</title>
+</head>
+
+<body>
+    <header id="header">
+        <a href="#" class="logo">Festival</a>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+
+    <section id="scene">
+        <img src="splash.png" alt="splash">
+        <img src="text.png" alt="text">
+        <img src="baloon1.png" alt="baloon1">
+        <img src="baloon2.png" alt="baloon2">
+        <img src="baloon3.png" alt="baloon3">
+        <img src="decoration1.png" alt="decoration1">
+        <img src="decoration2.png" alt="decoration2">
+        <img src="color1.png" alt="color1">
+        <img src="color2.png" alt="color2">
+        <img src="watergun1.png" alt="watergun1">
+        <img src="watergun2.png" alt="watergun2">
+    </section>
+
+    <div class="sec">
+        <h2>Parallax Scrolling Effects</h2>
+        <p>Tabriklayman! U yana bir yilni davomida dunyodagi eng ajoyib insonlaridan biri bo'lib turib, uning hayotida
+            yana ko'plab muvaffaqiyatlar va baxt tilab qolgan bo'lsin.<br><br> Siz unga o'z vaqtizor
+            fikr-mulohazalaringizni, sevgingizni va qadr-qimmatini ko'rsatishni unutmang. Hayotda do'stlarimiz buning
+            o'z xil muhim ahamiyatga ega. Ular bilan hayotingizni baham qilishning zaruriyati va ma'nosi juda
+            katta.<br><br> Ular sizni qo'liga oldi va siz ham unga qo'liga berib, bir-biringizga qo'l solishingiz
+            o'zbekistonlik o'zingizga xos xayot va muvaffaqiyatlar bilan baliq. Har kuni unga qadrdon bo'ling va
+            do'stingizga yana bir yil muborak bo'lsin!</p>
+    </div>
+    <script>
+        let splash = document.getElementById('splash');
+        let text = document.getElementById('text');
+        let decoration1 = document.getElementById('decoration1');
+        let baloon1 = document.getElementById('baloon1');
+        let baloon2 = document.getElementById('baloon2');
+        let baloon3 = document.getElementById('baloon3');
+        let color1 = document.getElementById('color1');
+        let color2 = document.getElementById('color2');
+        let watergun1 = document.getElementById('watergun1');
+        let balowatergun2on3 = document.getElementById('watergun2');
+
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+            splash.style.top = value * 0.75+'px';
+            text.style.top = value * 0.25+'px';
+            decoration1.style.top = value * 0.5+'px';
+            baloon1.style.top = value * -3.25+'px';
+            baloon2.style.top = value * -0.5+'px';
+            baloon3.style.top = value * -2+'px';
+        })
+    </script>
+</body>
+
+</html>
